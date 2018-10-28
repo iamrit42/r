@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".fi").click(function(){
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+        });
+        $(document).ready(function(){
+            $(".fo").click(function(){
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            });
+        });
+    </script>
+</head>
+
+<body style="align:center"><h2>Fade_IN AND Fade_OUT</h2>
+<button  class="fi">FadeIN</button>
+<button  class="fo">FadeOUT</button><br><br>
+<div id="div1" style="width:200px;height:200px;background-color:red; margin-left:20%;margin-top:10%;position: absolute"></div>
+<br>
+<div id="div2" style="width:200px;height:200px;background-color:black;margin-left:40%;margin-top:9%;position: absolute"></div>
+<br>
+<div id="div3" style="width:200px;height:200px;background-color:palevioletred;margin-left:60%;margin-top:8%; position: absolute"></div>
+
+</body>
+</html>
